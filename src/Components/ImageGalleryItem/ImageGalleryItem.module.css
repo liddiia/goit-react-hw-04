@@ -1,0 +1,22 @@
+.imageGalleryItem{
+ background-color:  rgb(193, 149, 237);
+ border: 2px solid  rgb(86, 14, 158);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.photoCard{
+
+}
+  
+  .galleryLink {
+    display: block;
+    text-decoration: none;
+  }
+  .galleryLink:hover,
+  .galleryLink:focus {
+    box-shadow: 0px 4px 51px 6px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 0px 4px 51px 6px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 0px 4px 51px 6px rgba(0, 0, 0, 0.72);
+  }
+  

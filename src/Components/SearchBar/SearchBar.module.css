@@ -1,0 +1,23 @@
+.serchPlace{
+    background-color: rgb(86, 14, 158);
+ width: 100wp;
+  padding: 10px;
+
+}
+.searchInput{
+    
+        padding: 10px 15px;
+        font-size: 20px;
+    border: 1px solid white;
+    border-radius:5px ;
+    margin-right: 8px;
+
+}
+.searchButton{
+  padding: 10px 15px;
+  font-size: 20px;
+border: 1px solid white;
+border-radius:5px ;
+color: rgb(86, 14, 158);
+text-color: white;
+}

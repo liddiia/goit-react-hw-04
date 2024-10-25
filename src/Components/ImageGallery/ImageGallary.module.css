@@ -1,0 +1,15 @@
+.imageGallaryCont{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 8px;
+    width: 100%;
+    list-style: none;
+
+    padding: 0;
+
+}
+
+.imageGallaryIt{
+
+    margin: 0 auto;
+} 
