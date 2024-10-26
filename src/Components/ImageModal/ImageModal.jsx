@@ -42,8 +42,7 @@ const ImageModal = ({onCloseModal,isModalOpen, selectedImage}) => {
           src={selectedImage.urls.regular}
           alt={selectedImage.alt_description || 'Image'}
         />
-        {selectedImage.description && <p>{selectedImage.description}</p>}
-        <p><FiThumbsUp/> {selectedImage.likes}</p>
+               <p><FiThumbsUp/> {selectedImage.likes}</p>
       </div>
     )}
   </Modal>
