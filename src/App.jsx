@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Loader from "./Components/Loader/Loader";
+import Loader from "./components/Loader/Loader";
 import "./App.css";
-import SearchBar from "./Components/SearchBar/SearchBar";
-import ImageGallery from "./Components/ImageGallery/ImageGallery";
-import LoadMoreButton from "./Components/LoadMoreButton/LoadMoreButton";
-import ImageModal from "./Components/ImageModal/ImageModal";
-import ErrorMesage from "./Components/ErrorMessage/ErrorMessage";
+import SearchBar from "./components/SearchBar/SearchBar";
+import ImageGallery from "./components/ImageGallery/ImageGallery";
+import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
+import ImageModal from "./components/ImageModal/ImageModal";
+import ErrorMesage from "./components/ErrorMessage/ErrorMessage";
 
 const App = () => {
   const [images, setImages] = useState([]);
