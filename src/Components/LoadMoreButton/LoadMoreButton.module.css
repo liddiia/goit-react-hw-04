@@ -1,7 +1,17 @@
 .LoadMoreButtonn {
     border: 1px solid rgb(86, 14, 158);
     border-radius: 5px;
-    padding: 5px;
+    padding:10px 15px;
     margin-top: 5px;
-
+ color: rgb(86, 14, 158);
+ font-size: 20px;
+ 
 }
+
+  .LoadMoreButtonn:hover,
+  .LoadMoreButtonn:focus{
+    border: 1px solid white;
+    box-shadow: inset 0px 0px 82px 100px rgba(86, 14, 158, 1);
+
+  color: white;
+  }

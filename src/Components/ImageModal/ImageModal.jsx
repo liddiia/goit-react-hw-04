@@ -1,8 +1,9 @@
-import style from './ImageModal.module.css';
 import Modal from 'react-modal';
 Modal.setAppElement('#root');
-import { CgCloseO } from 'react-icons/cg';
-import { CgHeart } from "react-icons/cg";
+
+import css from "./ImageModal.module.css"
+import {FiXCircle,FiThumbsUp } from "react-icons/fi";
+
 const customStyles = {
   content: {
     top: '50%',
@@ -13,39 +14,42 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
   },
 };
-const ImageModal = ({isModalOpen, closeModal, selectedImage }) => {
-  return (
-    <Modal
-      className={style.customModalContent}
-      overlayClassName={style.overlay}
-      isOpen={isModalOpen}
-      onRequestClose={closeModal}
-      style={customStyles}
-      contentLabel="Expended image"
-      appElement={document.getElementById('root')}
-    >
-      <button
-        className={style.btnClose}
-        onClick={closeModal}
-        style={{ border: 'none', background: 'none', cursor: 'pointer' }}
-      >
-        <CgCloseO size={30} />
-      </button>
 
-      {selectedImage && (
-        <div>
-          <img
-            className={style.modalImg}
-            src={selectedImage.url}
-            alt={selectedImage.description || 'Image'}
-          />
-          {selectedImage.description && <p>{selectedImage.description}</p>}
-          <p>Author: {selectedImage.author}</p>
-          <div><CgHeart />{selectedImage.likes} </div>
-        </div>
-      )}
-    </Modal>
-  );
-};
+const ImageModal = ({onCloseModal,isModalOpen, selectedImage}) => {
+   return (
+
+    <Modal
+  className={css.modal}
+
+    isOpen={isModalOpen}
+    onRequestClose={onCloseModal}
+    style={customStyles}
+    contentLabel="Expended image"
+    appElement={document.getElementById('root')}
+  >
+    <button
+     className={css.buttonClose}
+      onClick={onCloseModal}
+      style={{ border: 'none', background: 'none', cursor: 'pointer' }}
+    >
+      <FiXCircle size={30} />
+    </button>
+
+    {selectedImage && (
+      <div>
+        <img
+      
+          src={selectedImage.urls.regular}
+          alt={selectedImage.alt_description || 'Image'}
+        />
+        {selectedImage.description && <p>{selectedImage.description}</p>}
+        <p><FiThumbsUp/> {selectedImage.likes}</p>
+      </div>
+    )}
+  </Modal>
+
+
+  )
+}
 
 export default ImageModal;

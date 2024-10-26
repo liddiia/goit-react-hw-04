@@ -1,22 +1,18 @@
 .imageGalleryItem{
- background-color:  rgb(193, 149, 237);
- border: 2px solid  rgb(86, 14, 158);
+ background-color:  rgb(204, 204, 206);
+ border: 2px solid  #560e9e;
     border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0px 0px 24px -5px rgba(86, 14, 158, 1);
+    width:  ((100% - 40px) / 4);
+  }
+.imgItem{
+  cursor: pointer;
 }
-.photoCard{
 
-}
-  
-  .galleryLink {
-    display: block;
-    text-decoration: none;
-  }
-  .galleryLink:hover,
-  .galleryLink:focus {
-    box-shadow: 0px 4px 51px 6px rgba(0, 0, 0, 0.72);
-    -webkit-box-shadow: 0px 4px 51px 6px rgba(0, 0, 0, 0.72);
-    -moz-box-shadow: 0px 4px 51px 6px rgba(0, 0, 0, 0.72);
-  }
+  .imgItem:hover,
+ .imgItem:focus {
+  transform: scale(1.05);
+  transition-duration: 250ms;
+ }
   
